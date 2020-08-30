@@ -26,7 +26,7 @@ SECRET_KEY = 'b!sb%ykten6gb5&%z^f5=zj833&$##ijre09b3d9^&!t1&qnb0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -81,8 +81,15 @@ WSGI_APPLICATION = 'likelion_syu_renewal.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'syuproject',
+        'USER': 'likelion36',
+        'PASSWORD': 'lionsyu5904',
+        'HOST': 'likelionsyu.cu9h2urixeua.ap-northeast-2.rds.amazonaws.com',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
+        }
     }
 }
 
