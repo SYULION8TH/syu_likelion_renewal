@@ -5,7 +5,7 @@
 
 # 초기셋팅
 
-git clone부터 해야겠죠? `git clone https://github.com/SYULION8TH/syu_likelion_renewal`
+git clone부터 해야겠죠? `git clone https://github.com/SYULION8TH/syu_likelion_renewal.git`
 
 클론을 한 후에는 우리가 늘 그랬듯이 가상환경 만들어줍시다. `python -m venv myvenv`
 
