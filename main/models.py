@@ -90,7 +90,7 @@ class rel_mem_timeline(models.Model):
     start_act = models.DateTimeField(null=True)
 
 
-class hash_tag(models.Model):
+class hashtag(models.Model):
     ht_id = models.AutoField(primary_key=True)
     ht_name = models.CharField(max_length=45, null=True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
