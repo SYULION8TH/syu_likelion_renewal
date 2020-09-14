@@ -94,7 +94,7 @@ master  브랜치에는 반드시 오류가 없는 완성본들만 모아둘 예
  
   ## 각 기능에 맞게 앱 폴더 범위 안에서만 작업해주세요! 아래 사항 꼭 모두 숙지해주세요!
   
-  - css와 js파일은 되도록 html파일에 넣지 마시고 각 앱의 templates/static 폴더에 알맞게 넣어서 적용시켜주세요.
+  - 각 앱의 html 파일과 css파일은 앱안의 templates폴더 안에서 관리합니다. 특히 html을 제외한 css와 js파일들은 templates/static 경로에서 관리합니다.
   - static폴더는 static파일들이 들어가는 곳입니다!(css,js,img파일 등등..) 각 폴더의 용도에 맞는 파일만 넣어주세요.
   - 모든 db는 main/models.py에 존재합니다.
   - 작업중 static파일이 변경되면 결과를 보기전에 `python manage.py collectstatic` 하는거 잊지 맙시다! static파일들이 모이는 중앙 static폴더 위치는 likelion_syu_renewal/static
