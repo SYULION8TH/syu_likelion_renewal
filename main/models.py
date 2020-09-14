@@ -61,7 +61,7 @@ class service(models.Model):
 class rel_wiki_hashtag(models.Model):
     id = models.AutoField(primary_key=True)
     wiki = models.ForeignKey(wiki, on_delete=models.CASCADE, null=True)
-    hash_tag = models.ForeignKey('hash_tag', on_delete=models.CASCADE, null=True)
+    hashtag = models.ForeignKey('hashtag', on_delete=models.CASCADE, null=True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True, null=True)
 
