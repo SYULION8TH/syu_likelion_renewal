@@ -60,7 +60,8 @@ ROOT_URLCONF = 'likelion_syu_renewal.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'main', 'templates', 'html')],
+        'DIRS': [os.path.join(BASE_DIR, 'main','templates', 'html'), 
+        os.path.join(BASE_DIR, 'errorwiki','templates', 'html')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
