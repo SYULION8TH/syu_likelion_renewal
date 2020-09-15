@@ -47,7 +47,7 @@
   
   ## GIT 운영 (필독)
 
-각 작업자가 맡은 페이지는  [issues](https://github.com/SYULION8TH/2020-syu-club-client/issues)에서 확인할 수 있습니다. 담당자로 본인이 설정되어 있는 내용을 작업하면 됩니다. 이 때, 브랜치를 나누어 작업합니다.  
+각 작업자가 맡은 페이지는  [issues](https://github.com/SYULION8TH/syu_likelion_renewal/issues)에서 확인할 수 있습니다. 담당자로 본인이 설정되어 있는 내용을 작업하면 됩니다. 이 때, 브랜치를 나누어 작업합니다.  
 각 브랜치에서 작업한 결과물은 각 브랜치에 푸시합니다. 각 브랜치에 할당된 작업이 끝나면 dev로 pull request를 작성해 merge승인을 기다립니다.
 
 작업은 feature -> dev -> master 의 구조로 이루어집니다.
