@@ -17,7 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from discussion import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('path/' , views.home)
+    # path('path/' , views.home),
+    path('',include('discussion.urls')),
+   
+    
+   
 ]
