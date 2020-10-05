@@ -11,6 +11,8 @@
 <body>
     <h1>base</h1>
     {% block contents %} {% endblock %}
-
+    {% for post in members %}
+    <p>{{ post.mem_name }}</p>
+    {%endfor%}
 </body>
 </html>
