@@ -19,5 +19,7 @@ from discussion import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('path/' , views.home)
+    path('path/' , views.home),
+    path('disc/', include("discussion.urls")),
+    path('wiki/', include("errorwiki.urls")),
 ]

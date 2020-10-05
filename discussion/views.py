@@ -7,3 +7,4 @@ from main import models
 def home(request):
    # return render(request, "./ ")
    return JsonResponse({"key" : "Hello" })
+

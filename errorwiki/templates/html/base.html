@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="../../../static/admin/css/base3.css">
+
+</head>
+<body>
+    <div class="__container">
+        <header class= "__header_container">
+            <div class= "__logo"> <img src="../../../static/admin/img/likelion_syu_word_watermark.png" width=100px; height=30px;> </div>
+            <ul class= "__header_menu">
+                <li class="__menu"><a class="__menu" href= "/">SERVICE</a></li>
+                <li class="__menu"><a class="__menu" href= "/">TIMELINE</a></li>
+                <li class="__menu"><a class="__menu" href= "/">ERRORWIKI</a></li>
+            </ul>
+            <ul class= "__header_SNS">
+                <li class="__sns"><a class="__sns" href= "/"><img src="../../../static/admin/img/Search White.png"></a></li>
+                <li class="__sns"><a class="__sns" href= "https://www.instagram.com/likelion_syu/"><img src="../../../static/admin/img/패스 343.png"></a></li>
+                <li class="__sns"><a class="__sns" href= "https://www.facebook.com/likelionsahmyook/"><img src="../../../static/admin/img/패스 342.png"></a></li>
+            </ul>
+        </header>
+        
+        <div class="__side_container">
+                <p class="__side"><a class="__side" href="/"><img src="../../../static/admin/img/Compose.png">&nbsp;글쓰기</a></p>
+                <p class="__side"><a class="__side" href="/"><img src="../../../static/admin/img/Chat.png">&nbsp;게시글</a></p>
+                <p class="__side_tag"><a class="__side" href="/"><img src="../../../static/admin/img/패스 4226.png">&nbsp;인기태그</a></p>
+        </div>
+
+
+        
+        <footer class= "__footer_container">
+            <div class="__logo"> <img src="../../../static/admin/img/likelion_syu_word_watermark.png" width=100px; height=30px;></div>
+            <div class="__footer_info">
+                © 멋쟁이 사자처럼 at 삼육대학교개발: 배성현, 6기 일동     서울특별시 노원구 화랑로 815 삼육대학교 학생회관     Email : sahmyook@likelion.org     개인정보처리방침운영회칙
+            </div>
+            
+        </footer>
+        {% block contents %}
+        {% endblock %}
+        <div class="main_container">
+            <span class="main">
+                <h1>게시글</h1>
+            </span>
+
+            <span class="search">
+                <input type="text" placeholder="검색어를 입력하세요.">
+            </span>
+            
+
+            <div  style="overflow-y:auto; overflow-x:hidden; width:100%; height:450px;">
+                <table class="maintable">
+                    <tr><!--1-->
+                        <td class="td-1">0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                    <tr><!--2-->
+                        <td>0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                    <tr><!--3-->
+                        <td>0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                    <tr><!--4-->
+                        <td>0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                    <tr><!--5-->
+                        <td>0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                    <tr><!--6-->
+                        <td>0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                    <tr><!--7-->
+                        <td>0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                    <tr><!--8-->
+                        <td>0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                    <tr><!--9-->
+                        <td>0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                    <tr><!--10-->
+                        <td>0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                    <tr><!--11-->
+                        <td>0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                    <tr><!--12-->
+                        <td>0.타이틀</td>
+                        <td><img src="../../../static/admin/img/Icon feather-message-circle.jpg"></td>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </div>
+            <nav class="page_navigation">
+                <ul class="page_navigation">
+                    <li>
+                        <a href="#">&lt;</a>
+                    </li>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">&gt;</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
