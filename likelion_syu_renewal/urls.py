@@ -23,6 +23,4 @@ urlpatterns = [
     # path('path/' , views.home),
     path('',include('discussion.urls')),
    
-    
-   
 ]

@@ -1,7 +1,11 @@
 from django.contrib import admin
-from discussion.models import MainDiscussion
+from main.models import discussion, ip, wiki, opinion
 # Register your models here.
-admin.site.register(MainDiscussion)
+admin.site.register(discussion)
+admin.site.register(opinion)
+
+
+
 
 
 
