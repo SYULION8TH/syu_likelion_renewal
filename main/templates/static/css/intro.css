@@ -75,6 +75,7 @@ html, body{
     margin: 0;
     font-weight: 400;
     font-size: 80px;
+    padding: 0 20px;
 }
 
 #intro_01 h1 span{
@@ -101,8 +102,9 @@ html, body{
 
 #intro_01 .intro_btn{
     position: absolute;
+    transform: translate(-50%, 0);
+    bottom: 90px;
     left: 50%;
-    transform: translate(-50%, -100%);
     text-decoration: none;
     width: 256px;
     height: 70px;
@@ -303,16 +305,15 @@ html, body{
 /* aside 종료 */
 
 /* intro_02 시작 */
-#intro_02 .content, #intro_03 .content, #intro_05 .content{
+#intro_02 .content, #intro_03 .content{
     width: 1465px;
-    height: calc( 100% - 50px );
     margin: auto;
     padding-left: 100px;
     padding-right: 100px;
     padding: 25px 100px;
 }
 
-#intro_04 .content{
+#intro_04 .content, #intro_05 .content, #intro_02 .content{
     width: 1465px;
     margin: auto;
     padding-left: 100px;
@@ -386,7 +387,6 @@ html, body{
     text-align: left;
     width: 100%;
     padding-bottom: 1vw;
-    height: 40%;
 }
 
 #intro_02 .content .bottom .title{
@@ -491,7 +491,9 @@ html, body{
 }
 
 #intro_03 .content>.bottom{
-    height: 80%;
+    height: 60%;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 #intro_03 .content>.top::after{
@@ -511,7 +513,12 @@ html, body{
 }
 
 #intro_03 .content>.bottom>.bottom{
-    margin-top: 50px;
+    height: 50%;
+    padding-top: 20px;
+}
+
+#intro_03 .content>.bottom>.top{
+    height: 50%;
 }
 
 #intro_03 .content>.bottom>div>div img{
@@ -525,7 +532,7 @@ html, body{
 
 #intro_03 .content>.bottom>div>div p{
     padding: 0 40px;
-    font-size: 0.9vw;
+    font-size: 0.8vw;
 }
 
 /* intro_04 시작 */
@@ -620,11 +627,72 @@ html, body{
 
 #intro_05 .content{
     position: relative;
-    z-index: 1;
 }
 
 #intro_05 .content h1{
     font-size: 2vw;
+    z-index: 1;
+    margin-bottom: 700px;
+}
+
+#intro_05 .content>div{
+    position: absolute;
+    z-index: 3;
+    width: 87%;
+    max-width: 1465px;
+    transform: translate(0, -600px);
+    height: 40%;
+}
+
+#intro_05 .content>div>div{
+    display: inline-block;
+}
+
+#intro_05 .content>div>div:last-child{
+    transform: rotate(180deg);
+    width: 30px;
+}
+
+#intro_05 .content>div>div:first-child{
+    width: 30px;
+}
+
+#intro_05 .content>div>div:first-child img, #intro_05 .content>div>div:last-child img{
+    width: 100%;
+}
+
+#intro_05 .content>div>div:nth-child(2){
+    width: calc( 100% - 80px );
+    vertical-align: middle;
+}
+
+#intro_05 .content>div>div:nth-child(2)>div:first-child>a:last-child{
+    display: none;
+}
+
+#intro_05 .content>div>div:nth-child(2)>div:first-child{
+    width: 35%;
+    display: inline-block;
+}
+
+#intro_05 .content>div>div:nth-child(2)>div:first-child img{
+    width: 100%;
+    display: inline-block;
+}
+
+#intro_05 .content>div>div:nth-child(2)>div:last-child{
+    width: 55%;
+    display: inline-block;
+}
+
+#intro_05 .content>div>div:nth-child(2)>div:last-child>a{
+    display: inline-block;
+    width: 32%;
+}
+
+#intro_05 .content>div>div:nth-child(2)>div:last-child>a>img{
+    width: 100%;
+    display: block;
 }
 
 /* #intro_06 */
@@ -634,7 +702,7 @@ html, body{
     justify-content: center;
     align-items: center;
     background-image: url(../img/syu_7th.jpg);
-    background-position: 50% -250px;
+    background-position: 50% -200px;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
