@@ -1,0 +1,771 @@
+/* fullpage 시작 */
+html, body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+/* fullpage 끝 */
+#go_top{
+    width: 60px;
+    height: 60px;
+    background-color: #202020;
+    border-radius: 100%;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 50px;
+}
+
+/* page up, down */
+.page{
+    position: absolute;
+    margin-left: 70px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 3;
+}
+.page a{
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+
+/* intro 01 시작 */
+#intro_01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/main_img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#intro_01::before{
+    left: 0;
+    z-index: 0;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#intro_01 h1{
+    margin: 0;
+    font-weight: 400;
+    font-size: 80px;
+}
+
+#intro_01 h1 span{
+    display: block;
+    padding-top: 55px;
+}
+
+#intro_01 h1::after{
+    display: block;
+    content: "";
+    margin: 55px auto;
+    width: 120px;
+    height: 4px;
+    background-color: white;
+}
+
+#intro_01 div>p{
+    font-size: 22px;
+    font-weight: 100;
+    padding-bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#intro_01 .intro_btn{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-decoration: none;
+    width: 256px;
+    height: 70px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 35px;
+    font-size: 22px;
+    z-index: 3;
+}
+#intro_01 .intro_btn p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro_01 .content{
+    position: relative;
+    width: 100%;
+}
+
+#intro_01 .content>div{
+    display: block;
+    z-index: 1;
+}
+
+#animation {
+    position: absolute;
+    z-index: 2;
+    margin: 8px auto;
+    bottom: 0;
+    animation-name: opacity3;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+#animation img{
+    width: 32px;
+}
+
+#animation span {
+    opacity: 0;
+    display: block;
+    text-align: center;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: white;
+    margin: 4px auto;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+#animation span:nth-child(2){
+    animation-name: none1;
+}
+#animation span:nth-child(3){
+    animation-name: none2;
+}
+#animation span:nth-child(4){
+    animation-name: none3;
+}
+#animation span:nth-child(5){
+    animation-name: none4;
+}
+
+#animation span:nth-child(6){
+    animation-name: none5;
+}
+
+@keyframes opacity3 {
+    84%{
+        opacity: 1;
+    }
+    98%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes none1{
+    13%{
+        opacity: 0;
+    }
+    14%{
+        opacity: 1;
+    }
+    93%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes none2{
+    27%{
+        opacity: 0;
+    }
+    28%{
+        opacity: 1;
+    }
+    93%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes none3{
+    41%{
+        opacity: 0;
+    }
+    42%{
+        opacity: 1;
+    }
+    93%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes none4{
+    55%{
+        opacity: 0;
+    }
+    56%{
+        opacity: 1;
+    }
+    93%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes none5{
+    69%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    93%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* intro_01 종료 */
+
+/* aside 시작 */
+.aside{
+    z-index: 2;
+    left: -450px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.aside>div {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    transform-origin: center;
+    justify-content: center;
+}
+
+.aside a{
+    display: inline-block;
+    width: 58px;
+    height: 6px;
+    border: solid 1px #005AFF;
+    margin: 0 20px;
+}
+
+.aside p{
+    display: inline-block;
+    font-weight: 700;
+    font-style: normal;
+    color: #005AFF;
+    font-size: 23px;
+    margin: 0 20px;
+    word-break: nowrap;
+    font-size: 1.1vw;
+}
+
+/* aside 종료 */
+
+/* intro_02 시작 */
+#intro_02 .content, #intro_03 .content, #intro_05 .content{
+    width: 1465px;
+    height: calc( 100% - 50px );
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding: 25px 100px;
+}
+
+#intro_04 .content{
+    width: 1465px;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding: 25px 100px;
+}
+
+#intro_02 .top{
+    width: 100%;
+    height: 60%;
+}
+
+#intro_02 .content .top .title {
+    display: inline-block;
+    content: url(../img/HackYourLife_web.svg);
+    width: 40%;
+    float: left;
+    vertical-align: top;
+    max-height: 580px;
+    height: 100%;
+}
+
+#intro_02 .content>div{
+    display: block;
+}
+
+#intro_02 .content>div>div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#intro_02 .top>div{
+    width: calc( 60% - 30px );
+    float: right;
+    height: 100%;
+    padding-left: 30px;
+}
+ 
+#intro_02 .content>div>div>div h3{
+    display: block;
+    font-size: 2vw;
+    margin: 0;
+    text-align: right;
+}
+
+#intro_02 .content>div>div>div h3:first-child{
+    margin: 1vw 0px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#intro_02 .content>div>div>.sub_title::after{
+    float: right;
+    display: block;
+    content: "";
+    width: 80%;
+    height: 4px;
+    background-color: #005AFF;
+    margin: 35px 0;
+}
+
+#intro_02 .content>div>div>.text{
+    float: right;
+    text-align: right;
+    font-size: 1.05vw;
+}
+
+#intro_02 .content .bottom{
+    padding-top: 42px;
+    clear: both;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 1vw;
+    height: 40%;
+}
+
+#intro_02 .content .bottom .title{
+    font-size: 1.3vw;
+    margin: 0;
+}
+
+#intro_02 .content .bottom div>div{
+    font-size: 0.9vw;
+}
+
+#intro_02 .content .bottom .title::after{
+    display: block;
+    content: "";
+    width: 623px;
+    height: 4px;
+    background-color: #005AFF;
+    margin: 35px 0;
+}
+
+#intro_02 .content .bottom>div{
+    width: 100%;
+}
+
+#intro_02 .content .bottom>div div{
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+}
+
+#intro_02 .content .bottom>div div::after{
+    display: inline-block;
+    content: "";
+    background-color: rgba(107, 148, 223, 0.5);
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#intro_02 .content .bottom>div div:last-child::after{
+    display: none;
+}
+
+@keyframes intro_02{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#intro_02 .content .bottom>div div p{
+    color: gray;
+    padding: 0 10px;
+}
+
+#intro_02 .content .bottom>div div h4, #intro_02 .content .bottom>div div p{
+    opacity: 0;
+    animation-name: intro_02;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+}
+
+#intro_02 .content .bottom>div div:nth-child(2) h4, #intro_02 .content .bottom>div div:nth-child(2) p{
+    animation-delay: 0.8s;
+}
+#intro_02 .content .bottom>div div:nth-child(3) h4, #intro_02 .content .bottom>div div:nth-child(3) p{
+    animation-delay: 1.2s;
+}
+#intro_02 .content .bottom>div div:nth-child(4) h4, #intro_02 .content .bottom>div div:nth-child(4) p{
+    animation-delay: 1.6s;
+}
+
+/* intro_03 시작 */
+
+.intro_03 .top, .intro_03 .bottom{
+    width: 100%;
+}
+
+#intro_03 .content h3{
+    display: block;
+    font-size: 2vw;
+    margin: 0;
+    text-align: left;
+}
+
+#intro_03 .content h3:first-child{
+    margin: 1vw 0px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#intro_03 .content>.top{
+    height: 20%;
+}
+
+#intro_03 .content>.bottom{
+    height: 80%;
+}
+
+#intro_03 .content>.top::after{
+    display: block;
+    content: "";
+    width: 623px;
+    height: 4px;
+    background-color: #005AFF;
+    margin: 35px 0;
+}
+
+#intro_03 .content>.bottom>div>div{
+    width: 32%;
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align: top;
+}
+
+#intro_03 .content>.bottom>.bottom{
+    margin-top: 50px;
+}
+
+#intro_03 .content>.bottom>div>div img{
+    width: 80px;
+    opacity: 0;
+    animation-name: intro_02;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
+}
+
+#intro_03 .content>.bottom>div>div p{
+    padding: 0 40px;
+    font-size: 0.9vw;
+}
+
+/* intro_04 시작 */
+
+#intro_04 .content>h1{
+    margin: 0;
+    font-size: 2vw;
+}
+
+#intro_04 .mentor h2{
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+#intro_04 p{
+    font-size: 1.1vw;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+#intro_04 .mentor h2::after, #intro_04 .mentee h2::after{
+    display: block;
+    content: "";
+    width: 349px;
+    height: 4px;
+    background-color: #005AFF;
+    margin: 10px 0;
+}
+
+#intro_04 .mentee h2::after{
+    position: absolute;
+    right: 0;
+}
+
+#intro_04 .mentee h2{
+    font-size: 1.5vw;
+    position: relative;
+    display: block;
+    text-align: right;
+}
+
+#intro_04 .mentor img{
+    width: 80%;
+    border-radius: 100%;
+}
+
+#intro_04 .mentee img{
+    width: 80%;
+    border-radius: 100%;
+}
+
+#intro_04 .content>div>div{
+    padding-top: 30px;
+}
+
+#intro_04 .content .metee>div{
+    clear: both;
+}
+
+#intro_04 .content .mentor>div{
+    display: flex;
+    justify-content: space-around;
+}
+
+#intro_04 .content .mentee>div>div{
+    width: 11%;
+    display: inline-block;
+}
+
+/* intro_05 시작 */
+
+#intro_05 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/uos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#intro_05::before{
+    left: 0;
+    z-index: 0;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#intro_05 .content{
+    position: relative;
+    z-index: 1;
+}
+
+#intro_05 .content h1{
+    font-size: 2vw;
+}
+
+/* #intro_06 */
+
+#intro_06 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/syu_7th.jpg);
+    background-position: 50% -250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#intro_06::before{
+    left: 0;
+    z-index: 0;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#intro_06 .content, #intro_06 .footer{
+    position: relative;
+    display: block;
+}
+
+#intro_06 .content{
+    display: flex;
+    height: calc( 100% - 230px );
+    margin: auto;
+    padding: 50px 100px;
+    align-items: center;
+}
+
+#intro_06 .content>div{
+    width: 100%;
+    position: relative;
+}
+
+#intro_06 .content>div>div{
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    transform: translate(0, -300px);
+}
+
+#intro_06 .content>div>div>div{
+    margin-top: 50px;
+    padding-top: 10px;
+    display: inline-block;
+    width: 24%;
+    position: relative;
+}
+
+#intro_06 .content>div>div>div:hover>p, #intro_06 .content>div>div>div:hover>h1{
+    color: #6B94DF;
+    transition-duration: 0.2s;
+}
+
+#intro_06 .content>div>div>div::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(107, 148, 233);
+    width: 1px;
+    height: calc( 100% - 10px );
+    right: 0;
+    bottom: 0;
+}
+
+#intro_06 .content>div>div>div:last-child::after{
+    display: none;
+}
+
+#intro_06 .footer{
+    display: block;
+    z-index: 3;
+    background-color: rgb(38, 38, 38);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#intro_06 .footer>div{
+    width: 1465px;
+    padding: 50px 100px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+#intro_06 .content h1{
+    width: 100%;
+    font-size: 2.3vw;
+}
+
+#intro_06 .content>div>h1{
+    margin-bottom: 300px;
+}
+
+#intro_06 .content>div>div>div p {
+    font-size: 1vw;
+    padding-top: 20px;
+}
+
+#intro_06 .footer>div:first-child a{
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+#intro_06 .footer>div:first-child p{
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+#intro_06>div:last-child{
+    width: 100%;
+    height: 100%;
+}
+
+#intro_06 .footer>div>div:first-child{
+    text-align: left;
+    width: 50%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#intro_06 .footer>div>div:last-child{
+    display: inline-block;
+    width: 50%;
+    float: right;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+#intro_06 .footer>div>div:last-child>a:last-child{
+    padding-left: 70px;
+}

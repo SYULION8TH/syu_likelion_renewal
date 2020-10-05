@@ -1,0 +1,344 @@
+{% extends 'base.html' %}
+{% block contents %}
+{% load static %}
+<a href="#intro_01" id="go_top"><img src="{% static '/img/go_top.svg' %}" alt="">
+</a>
+<div id="intro_01" class="intro">
+    <div class="page">
+        <a href=""></a>
+        <a href="#intro_02"></a>
+    </div>
+    <div class="content">
+        <div>
+            <h1>멋쟁이 사자처럼 at 삼육대학교<span>8기</span></h1>
+            <p>컴퓨터를 전혀 모르는 학생들이 코딩 교육을 통해 원하는 IT 서비스를 직접 런칭 합니다.<br>멋쟁이 사자처럼 at 삼육대학교를 통해서!</p>
+        </div>
+        <a href="" class="intro_btn"><p>홈페이지 바로가기</p></a>
+    </div>
+    
+    <div id="animation">
+        <img src="{% static 'img/next.svg' %}" alt="">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div id="intro_02" class="intro">
+    <div class="page">
+        <a href="#intro_01"></a>
+        <a href="#intro_03"></a>
+    </div>
+    <div class="aside">
+        <div>
+            <a href="#intro_06"></a>
+            <a href="#intro_05"></a>
+            <a href="#intro_04"></a>
+            <a href="#intro_03"></a>
+            <p>MISSION & SERVICE</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="top">
+            <span class="title"></span>
+            <div>
+                <div class="sub_title">
+                    <h3>LIKELION at SYU</h3>
+                    <h3>MISSION & SERVICE</h3>
+                </div>
+                <div class="text">
+                    <p><b>자체 개발된 온라인 강의 플랫폼 '클래스라이언'</b>을 통해 강의를 듣고 과제를 수행합니다.</p>
+                    <p>다양한 오프라인 활동과 병행하여 뜻을 같이하는 동료를 찾고</p>
+                    <p>자신이 <b>만들고자 하는 서비스를 직접 프로그래밍</b> 하도록 돕습니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <h4 class="title">IT서비스 구축을 위한 프로그래밍 학습</h4>
+            <div>
+                <div>
+                    <h4>HIGH TECHNOLOGY</h4>
+                    <p>최신 기술 스택 활용</p>
+                </div>
+                <div>
+                    <h4>PROGRAMMING EDUCATION</h4>
+                    <p>자체제작 플렛폼을 통해 학생 관리</p>
+                </div>
+                <div>
+                    <h4>SERVICE REALIZTION</h4>
+                    <p>해커톤을 통한 아이디어 개발/구현</p>
+                </div>
+                <div>
+                    <h4>CONTINUAL MANAGEMENTY</h4>
+                    <p>학교/팀별 온/오프라인 교육 및 스터디, 세미나</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="intro_03" class="intro">
+    <div class="page">
+        <a href="#intro_02"></a>
+        <a href="#intro_04"></a>
+    </div>
+    <div class="aside">
+        <div>
+            <a href="#intro_06"></a>
+            <a href="#intro_05"></a>
+            <a href="#intro_04"></a>
+            <p>PROGRAMMING EDUCATION</p>
+            <a href="#intro_02"></a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="top">
+            <h3>PROGRAMMING</h3>
+            <h3>EDUCATION</h3>
+        </div>
+        <div class="bottom">
+            <div class="top">
+                <div>
+                    <img src="{% static '/img/icon/html-5.png' %}" alt="">
+                    <h4>HTML</h4>
+                    <p>HTML은 웹을 이루는 가장 기초적인 구성 요소입니다. 웹페이지의 내용을 서술하고 정의하는 데 사용합니다. CSS는 웹페이지의 모양과 시각적 효과를 표현합니다.</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/icon/java-script.png' %}" alt="">
+                    <h4>JavaScript</h4>
+                    <p>JavaScript는 웹브라우저에 내장된 프로그래밍 언어입니다. JavaScript를 통해 클라이언트에게 풍부한 사용자 경험을 제공합니다.</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/icon/python.png' %}" alt="">
+                    <h4>Python</h4>
+                    <p>Python은 가장 배우기 쉬운 프로그래밍 언어 중 하나며, Django는 웹 개발을 빠르고 쉽게 진행하도록 설계된 Python 기반 웹 프레임워크입니다. 이 기술을 통해 웹 애플리케이션을 체계적이고 깔끔하게 개발할 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div>
+                    <img src="{% static '/img/icon/icons8-react-native-500.png' %}" alt="">
+                    <h4>React</h4>
+                    <p>React는 인터페이스를 만들기 위해 사용되는 자바스크립트 라이브러리 입니다. React는 싱글 페이지나 모바일 애플리케이션의 인터페이스 개발에 사용합니다.</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/icon/icons8-github-500.png' %}" alt="">
+                    <h4>Git</h4>
+                    <p>Git은 가장 많이 쓰이고 있는 버전 관리 도구 입니다. Git을 이용한 파일 관리와 백업의 혁신에 대해 배웁니다. Github를 통해 소스코드를 백업하고 팀원과 협업 및 커뮤니케이션 방법을 배웁니다.</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/icon/icons8-amazon-web-services-512.png' %}" alt="">
+                    <h4>AWS</h4>
+                    <p>AWS는 가장 인기있는 클라우드 컴퓨팅 플랫폼 입니다. 직접 자신만의 웹 서버를 구축하고 유지 관리하는 과정을 배웁니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="intro_04" class="intro">
+    <div class="page">
+        <a href="#intro_03"></a>
+        <a href="#intro_05"></a>
+    </div>
+    <div class="aside">
+        <div>
+            <a href="#intro_06"></a>
+            <a href="#intro_05"></a>
+            <p>OUR MEMBERS</p>
+            <a href="#intro_03"></a>
+            <a href="#intro_02"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>8기 구성원</h1>
+        <div class="mentor">
+            <h2>멘토</h2>
+            <div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+            </div>
+        </div>
+        <div class="mentee">
+            <h2>멘티</h2>
+            <div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+                <div>
+                    <img src="{% static '/img/avatar.svg' %}" alt="">
+                    <p>깜찍이</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="intro_05" class="intro">
+    <div class="page">
+        <a href="#intro_04"></a>
+        <a href="#intro_06"></a>
+    </div>
+    <div class="aside">
+        <div>
+            <a href="#intro_06"></a>
+            <p>OUR SERVICEE</p>
+            <a href="#intro_04"></a>
+            <a href="#intro_03"></a>
+            <a href="#intro_02"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>만든 서비스</h1>
+        <div>
+            <div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="intro_06" class="intro">
+    <div class="page">
+        <a href="#intro_05"></a>
+    </div>
+    <div class="aside">
+        <div>
+            <p>ACTIVITYE</p>
+            <a href="#intro_05"></a>
+            <a href="#intro_04"></a>
+            <a href="#intro_03"></a>
+            <a href="#intro_02"></a>
+        </div>
+    </div>
+    <div>
+        <div class="content">
+            <div>
+                <h1>활동내역</h1>
+                <div>
+                    <div>
+                        <h1>2018</h1>
+                        <p>년부터</p>
+                    </div>
+                    <div>
+                        <h1>50</h1>
+                        <p>명의 사자들이</p>
+                    </div>
+                    <div>
+                        <h1>3</h1>
+                        <p>번의 해커톤을 통해</p>
+                    </div>
+                    <div>
+                        <h1>8</h1>
+                        <p>개의 서비스를 만들었습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <div>
+                    <img src="{% static '/img/icon/likelion_syu_word_watermark.png' %}" alt="" width="100px">
+                    <p>© 멋쟁이 사자처럼 at 삼육대학교개발: 배성현, 6기 일동
+                    <br>서울특별시 노원구 화랑로 815 삼육대학교 학생회관
+                    <br>Email : sahmyook@likelion.org
+                    </p>
+                    <a href="">개인정보처리방침운영회칙</a>
+                </div>
+                <div>
+                    <a href=""><img src="{% static '/img/instargram.svg' %}" alt=""></a>
+                    <a href=""><img src="{% static '/img/facebook.svg' %}" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -3,3 +3,5 @@ from . import models
 
 # Create your views here.
 
+def intro(request):
+    return render(request, "./intro.html ")
